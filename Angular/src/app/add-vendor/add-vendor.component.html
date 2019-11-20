@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<nav class="navbar" style="background-color: white; height: 60px;">
+    <a class="navbar-brand">
+
+        &nbsp;<b>VENDOR MANAGER</b>
+    </a>
+</nav>
+
+<nav class="navbar" style="background-color: rgb(100, 100, 206); height: 70px;">
+
+
+
+</nav>
+
+<div class="jumbotron" style="background-color:rgb(227, 251, 253); ">
+    <div class="container">
+        <a class="navbar-brand" href="/view-vendor">BACK</a>
+        <br><br><br>
+        <div>
+            <section id="cover">
+
+                <input type="hidden" name="login.vendorid" />
+                <div class="col-10">
+                    Enter Vendor Name <input type="text" class="form-control" [(ngModel)]="login.vName"
+                        name="vName" /><br />
+                </div>
+                <div class="col-10">
+                    Enter Address: <input type="text" class="form-control" [(ngModel)]="login.address"
+                        name="address" /><br />
+                    <label for="form-control" class="col-2 col-form-label"> </label>
+                    <div class="drop-down">
+                        <label>Enter Location: </label> 
+                    <select class="form-control"  [(ngModel)]="login.location" name="Location">
+                        <option value="Trivandrum">Trivandrum</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Bangalore">Bangalore</option>
+                
+                    </select>
+                    </div>
+                    <br>
+
+
+
+
+
+                    Enter Service: <input type="text" class="form-control" [(ngModel)]="login.service"
+                        name="service" /><br />
+                    Enter Pincode: <input type="text" class="form-control" [(ngModel)]="login.pincode"
+                        name="pincode" /><br />
+                    Enter ContactName:<input type="text" class="form-control" [(ngModel)]="login.cName"
+                        name="contactname" /><br />
+                    Enter Department: <input type="text" class="form-control" [(ngModel)]="login.department"
+                        name="department" /><br />
+                    Enter Email: <input type="text" class="form-control" [(ngModel)]="login.email" name="email" /><br />
+                    Enter Phn: <input type="text" class="form-control" [(ngModel)]="login.phone" name="phone" /><br />
+
+
+                </div><br>
+                <button (click)="addVendor()">Add Vendor</button>
+                <br><br>
+
+            </section>
+        </div>
+
+    </div>
+</div>
